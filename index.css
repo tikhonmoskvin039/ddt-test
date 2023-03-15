@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    width: 80%;
+    margin: 5% auto 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+#search {
+    width: 100%;
+    margin-top: 16px;
+}
+
+#search::placeholder {
+    font-size: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.organization__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.organization__search {
+    position: relative;
+    padding-top: 20px;
+}
+
+.organization__type {
+    margin-top: 20px;
+}
+
+.organization__label-search {
+    font-weight: bold;
+}
+
+.organization__label {
+    margin-top: 20px;
+    padding-bottom: 1px;
+}
+
+.organization__input {
+    width: 80%;
+    padding: 2px 4px;
+    font-size: 10px;
+}
+
+@media (min-width: 576px) {
+    #search::placeholder {
+        font-size: 16px;
+    }
+
+    .organization__item {
+        font-size: 16px;
+    }
+
+    .organization__input {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.variant__list {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #999;
+    background-color: white;
+    z-index: 0;
+}
+
+.variant__item {
+    width: 100%;
+    padding: 4px;
+}
+
+.variant__item:hover {
+    background-color: #f7f7f7;
+}
+
+.variant__active {
+    background-color: #f7f7f7;
+}
+
+.variant__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 28px;
+}
+
+.variant__hint {
+    height: 20px;
+    padding: 4px;
+    overflow: hidden;
+    color: #777;
+    font-size: 85%;
+    line-height: 20px;
+}
+
+.variant__img {
+    width: 75px;
+    padding: 3px;
+}
+
+.variant__title {
+    text-decoration-line: line-through;
+}
+
+.variant__description {
+    display: flex;
+    color: #777777;
+    font-size: 10px;
+}
+
+.variant__inn {
+    margin-right: 8px;
+}
+
+.variant__mark {
+    color: dodgerblue;
+}
+
+@media (min-width: 576px) {
+    #search::placeholder {
+        font-size: 12px;
+    }
+
+    .organization__item {
+        font-size: 12px;
+    }
+
+    .organization__input {
+        font-size: 12px;
+    }
+
+    .variant__description {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    #search::placeholder {
+        font-size: 16px;
+    }
+
+    .organization__item {
+        font-size: 16px;
+    }
+
+    .organization__input {
+        font-size: 16px;
+    }
+
+    .variant__description {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .organization__input {
+        width: 50%;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+     <section class="organization">
+      <h1 class="organization__title">Информация о юридических лицах</h1>
+
+      <form class="organization__form">
+        <ul class="organization__list">
+          <li class="organization__item">
+            <div class="organization__search">
+              <label class="organization__label-search" for="search"
+                >Компания или ИП</label
+              >
+              <div id="wrap">
+                <input
+                  autofocus
+                  type="search"
+                  placeholder="Введите название, ИНН, ОГРН или адрес организации"
+                  id="search"
+                  class="organization__input"
+                />
+                <div class="variant__list hidden">
+                  <div class="variant__info">
+                    <p class="variant__hint">
+                      Выберите вариант или продолжите ввод
+                    </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="organization__item">
+            <label class="organization__label" for="short-name"
+              >Краткое наименование</label
+            >
+            <input type="text" id="short-name" class="organization__input" />
+          </li>
+
+          <li class="organization__item">
+            <label class="organization__label" for="full-name"
+              >Полное наименование</label
+            >
+            <input type="text" id="full-name" class="organization__input" />
+          </li>
+
+          <li class="organization__item">
+            <label class="organization__label" for="inn">ИНН / КПП</label>
+            <input type="text" id="inn" class="organization__input" />
+          </li>
+
+          <li class="organization__item">
+            <label class="organization__label" for="address">Адрес</label>
+            <input type="text" id="address" class="organization__input" />
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
